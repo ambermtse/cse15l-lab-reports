@@ -11,6 +11,7 @@ Unix Commands:
      Working Directory: /home (~ represents /home directory)
      There was no change to the directory because no argument was entered. The directory stayed as /home. 
      The output was not an error.
+
      
    - Example of cd with path to a *directory*:
 
@@ -20,7 +21,8 @@ Unix Commands:
      Working Directory: /home
      The output was a new line of the terminal with the directory now being /home/lecture1, which was the argument entered after the cd command.
      The output was not an error. 
-     
+
+
    - Example of cd with path to a *file*:
      
   
@@ -31,7 +33,7 @@ Unix Commands:
      The output was an error message saying the inputed argument was not a directory because a file path was used as an argument to try and change the working directory with the cd command. 
 
      
-2. ls
+1. ls
    - Example of ls with *no arguments*:
 
    
@@ -40,6 +42,7 @@ Unix Commands:
      Working directory: /home
      The output was "lecture 1" because the ls command lists the files and folders located in the working directory or given path. Since no path argument was given, ls listed the file in the working directory, which was /home.
      The output was not an error. 
+
    
    - Example of ls with path to a *directory*:
   
@@ -49,6 +52,7 @@ Unix Commands:
      Working directory: /home
      The output were the files and folders in /home/lecture1, since that was the path argument given to the ls command.
      The output was not an error.
+
    
    - Example of ls with path to a *file*:
   
@@ -59,7 +63,7 @@ Unix Commands:
      The output repeated the file path that was given as the argument because there are no files or folders located within /home/lecture1/Hello.java.
      The output was not an error. 
    
-3. cat
+2. cat
    - Example of cat with *no arguments*:
 
    
@@ -68,6 +72,7 @@ Unix Commands:
      Working directory: /home
      There was no output with the command cat and no arguments because cat prints out the contents of the file(s) located in the given path, but there was no path given. To stop the running command I had to perform ctrl C. 
      The output indicated there was an error since it did not stop running until I canceled the command using ctrl C. 
+
      
    - Example of cat with path to a *directory*:
   
@@ -77,6 +82,7 @@ Unix Commands:
      Working directory: /home
      The output repeated the path that was given as an argument and stated that it was a directory. No content of any files were printed out because the given path was a directory and not a file.
      The output indicates there was an error when running the command because cat is used to print out the contents of a file, but no contents were printed out since the path to a file was not given as the arguement. 
+
 
    - Example of cat with path to a *file*:
   
