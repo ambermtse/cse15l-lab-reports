@@ -4,12 +4,16 @@
 Unix Commands:
 1. cd
    - Example of cd with no arguments:
+  
+     
      ![Image](cd.png)
      Working Directory: /home
      There was no change to the directory because no argument was entered. The directory stayed as /home. 
      The output was not an error.
      
    - Example of cd with path to a directory:
+  
+     ![Image]() 
      
      Working Directory: /home
      The output was a new line of the terminal with the directory now being /home/lecture1, which was the argument entered after the cd command.
