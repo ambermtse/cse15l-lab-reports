@@ -65,22 +65,27 @@ Unix Commands:
    
      ![Image](cat.png)
 
-     Working directory:
+     Working directory: /home
+     There was no output with the command cat and no arguments because cat prints out the contents of the file(s) located in the given path, but there was no path given. To stop the running command I had to perform ctrl C. 
+     The output indicated there was an error since it did not stop running until I canceled the command using ctrl C. 
      
    - Example of cat with path to a *directory*:
   
      
      ![Image](cat-dir.png)
 
-     Working directory:
-     
+     Working directory: /home
+     The output repeated the path that was given as an argument and stated that it was a directory. No content of any files were printed out because the given path was a directory and not a file.
+     The output indicates there was an error when running the command because cat is used to print out the contents of a file, but no contents were printed out since the path to a file was not given as the arguement. 
 
    - Example of cat with path to a *file*:
   
      
      ![Image](cat-file.png)
 
-     Working directory: 
+     Working directory: /home
+     The output was the contents of the Hello.java file, which was the class *Hello* and the main method. This was the output because the argument given with the cat command was a path to the Hello.java file.
+     The output was not an error. 
 
      
 
