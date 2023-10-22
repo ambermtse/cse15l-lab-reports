@@ -35,3 +35,20 @@ The value of arrlist is changed from this request to be [Hello, How+are+you]. nu
 2. How+are+you
 
 parameters gets updated to be {s, How+are+you}.
+
+********
+
+![Image](keypaths.png)
+
+Using ls while being in my .ssh directory shows the paths to both my public key, id_rsa.pub, and my private key, id_rsa.
+
+Logging into ieng6 without password:
+
+![Image](nopwd1.png)
+![Image](nopwd2.png)
+
+******
+
+I didn't know before that multiple people are able to log into a remote computer at once. During lab, all the CSE15L students were using their ieng6 account to log into the 201, 202, or 203, computers, and multiple people were able to be connected to a computer at once. I also learned the components of a URL and how to write code that changes the server's output as you add a query in the URL. 
+
+
