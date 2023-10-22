@@ -44,8 +44,8 @@ Using ls while being in my .ssh directory shows the paths to both my public key,
 
 Logging into ieng6 without password:
 
-![Image](nopwd1.png)
-![Image](nopwd2.png)
+![Image](nopw1.png)
+![Image](nopw2.png)
 
 ******
 
