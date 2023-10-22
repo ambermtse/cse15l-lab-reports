@@ -62,7 +62,7 @@ Unix Commands:
    - Example of cat with *no arguments*:\
      ![Image](cat.png)
 
-     ![Image](cat2.png)
+     ![Image](cat-2.png)
 
      Working directory: /home\
      There was no output with the command cat and no arguments because cat prints out the contents of the file(s) located in the given path, but there was no path given. Although, when I try typing something into the terminal after I run cat with no arguments and I press enter, the output returns whatever I typed(see second picture). I can keep on doing this until I press ctrl C to stop cat from running. 
