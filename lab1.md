@@ -14,7 +14,7 @@ Unix Commands:
      ![Image](cd2.png) 
      
      Working Directory: /home/lecture1\
-     doing cd with no arguments when the directory is not the home directory, it changes the directory to the home directory. I ran cd with no arguments in /home/lecture1, and the directory changed to the home directory, /home.\
+     Doing cd with no arguments when the directory is not the home directory changes the directory to the home directory. I ran cd with no arguments in /home/lecture1, and the directory changed to the home directory, /home.\
      The output was not an error 
 
      
@@ -62,10 +62,11 @@ Unix Commands:
    - Example of cat with *no arguments*:\
      ![Image](cat.png)
 
-     ![Image](cat-2.png)
-
      Working directory: /home\
-     There was no output with the command cat and no arguments because cat prints out the contents of the file(s) located in the given path, but there was no path given. Although, when I try typing something into the terminal after I run cat with no arguments and I press enter, the output returns whatever I typed(see second picture). I can keep on doing this until I press ctrl C to stop cat from running. 
+     There was no output with the command cat and no arguments because cat prints out the contents of the file(s) located in the given path, but there was no path given. I pressed ctrl C to stop cat from continuing to run\
+      Although, if I run cat again with no arguments and type something into the terminal and press enter, the output returns whatever I typed(see picture below). I can keep on doing this until I press ctrl C to stop cat from running.\
+     ![Image](cat-2.png)
+     
      The output was not an error. 
 
      
