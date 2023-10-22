@@ -2,6 +2,12 @@
 ## Amber Tse A16776236 10/22/2023
 
 StringServer Code:
+![Image](StringServer1.png)
+![Image](StringServer2.png)
+
+*******
+
+![Image](add1.png)
 
 The handleRequest method in my code gets called during this screenshot.\
 The argument in the handleRequest method is called url and it is the url of the server.
@@ -14,6 +20,9 @@ The value of arrlist is changed from this request to be [Hello]. numlist is also
 
 parameters gets updated to be {s, Hello}.
 
+********
+
+![Image](add2.png)
 
 
 The handleRequest method in my code gets called during this screenshot.\
