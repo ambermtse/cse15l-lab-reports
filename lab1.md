@@ -10,6 +10,12 @@ Unix Commands:
      There was no change to the directory because no argument was entered. The directory stayed as /home.\
      The output was not an error.
 
+     Although, a different result appears if running cd with no arguments on a directory that is not the home directory. 
+     
+     Working Directory: /home/lecture1\
+     doing cd with no arguments when the directory is not the home directory, it changes the directory to the home directory. I ran cd with no arguments in /home/lecture1, and the directory changed to the home directory, /home.\
+     The output was not an error 
+
      
    - Example of cd with path to a *directory*:\
      ![Image](cd-dir.png)
@@ -27,7 +33,7 @@ Unix Commands:
      The output was an error message saying the inputed argument was not a directory because a file path was used as an argument to try and change the working directory with the cd command.
 
      
-2. ls
+1. ls
    - Example of ls with *no arguments*:\
      ![Image](ls.png)
 
@@ -51,7 +57,7 @@ Unix Commands:
      The output repeated the file path that was given as the argument because there are no files or folders located within /home/lecture1/Hello.java.\
      The output was not an error.
    
-3. cat
+2. cat
    - Example of cat with *no arguments*:\
      ![Image](cat.png)
 
