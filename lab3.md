@@ -25,7 +25,7 @@ Input that doesn't induce a failure as a JUnit test:\
 
 Symptom:\
 
-insert screenshot here
+![Image](symptom.png)
 
 Bug before any change:\
 
