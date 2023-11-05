@@ -1,4 +1,4 @@
-# CSE 15L Lab Report 1
+# CSE 15L Lab Report 3
 ## Amber Tse A16776236 11/5/2023
 
 Part 1:\
@@ -7,12 +7,12 @@ The bug I will be looking at is the one associated with the averageWithoutLowest
 
 Failure-inducing input as a JUnit test:\
 
-'''@Test
+#@Test
   public void testAverageWithoutLowest(){
     double[] arr1 = {1, 1, 5, 6};
     assertEquals(4.0, ArrayExamples.averageWithoutLowest(arr1),
        0.01);
-  }'''
+  }
 
 Input that doesn't induce a failure as a JUnit test:\
 
