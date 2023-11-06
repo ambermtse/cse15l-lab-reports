@@ -40,13 +40,15 @@ The value of arrlist is changed from this request to be `[Hello, How+are+you]`. 
 
 Path to my private key on my local computer:
 
+![Image](privKeyPath.png)
 
+My private key is saved in the file called `id_rsa`, which is the file of the path shown above. 
 
 Path to my public key from my ieng6 account:
 
+![Image](pubKeyPath.png)
 
-
-*Note: my public key is saved into the file called `authorized_keys`, which is the file of the path shown above. 
+My public key is saved into the file called `authorized_keys`, which is the file of the path shown above. 
 
 
 Logging into ieng6 without password:
