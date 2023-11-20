@@ -6,7 +6,7 @@ Part 1:
 The bug I will be looking at is the one associated with the averageWithoutLowest method.
 
 
-Failure-inducing input as a JUnit test:\
+Failure-inducing input as a JUnit test:
 
 ``` javascript
     @Test
@@ -26,6 +26,8 @@ Input that doesn't induce a failure as a JUnit test:
       }
 ```
 Symptom:
+
+![Image](symptom.png)
 
 ![Image](symptom.png)
 
