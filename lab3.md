@@ -25,11 +25,11 @@ Input that doesn't induce a failure as a JUnit test:
            0.01);
       }
 ```
-Symptom:
+Symptoms (Running tests with failure and non-failure inducing output):
 
-![Image](symptom.png)
+![Image](symptom1.png)
 
-![Image](symptom.png)
+![Image](symptom2.png)
 
 Bug before any change:
 
@@ -86,25 +86,30 @@ grep command-line options:
 $ grep -c ".txt" grep-results.txt
     1391
 ```
-```
-$ grep -c ".txt" find-results.txt
-    1391
-```
-The -c command-line option returns the number of lines in the indicated file that match the inputed pattern. This is useful if you're looking for a command that will only show you the number of matching lines and not a bunch of other data. 
 
+The -c command-line option returns the number of lines in the indicated file that match the inputed pattern, which is useful if you're looking for a command that will only show you the number of matching lines and not a bunch of other data. Here, `grep -c` is looking to see how many lines in `grep-results.txt` contain `.txt`.
+
+```
+$ grep -c "mouse" */*/1471-213X-1-1.txt
+    12
+```
+
+In this example, `grep -c` is looking to see how many lines in `1471-213X-1-1.txt` contain `mouse`. If you are just wondering how many lines contain your inputed pattern in the inputed file, this command is helpful. 
 
 -w:
 ```
 $ grep -w "final" grep-results.txt
     technical//government/Env_Prot_Agen/final.txt
 ```
+
+The -w command-line option matches with whole words. This is useful if your pattern is a string that is commonly used in words, but you are looking for just the individual word that the string represents. Here it is looking at the `grep-results.txt` file for lines containing `final`, and returns the matching line. 
+
 ```
 $ grep -w "law" grep-results.txt
     technical//government/Media/Eviction law.txt
 ```
 
-The -w command-line option matches with whole words. This is useful if your pattern is a string that is commonly used in words, but you are looking for just the individual word that the string represents. 
-
+This -w command-line option matches with `law` in the `grep-results.txt` file, and only returns lines that match with whole words, and not partial matches. There are lines in `grep-results.txt` that contain the word `lawyer`, and as you'll see, those don't qualify as a match with this command. 
 
 -o:
 ```
@@ -123,6 +128,9 @@ $ grep -o "mouse" */*/1471-213X-1-1.txt
     mouse
     mouse
 ```
+
+The -o command-line option prints out only matching parts of a matching line. Here it is looking at the file `1471-213X-1-1.txt` for the word `mouse`, and returns all the matching parts of the lines. This is a good way to double check that the grep command is matching what you intend it to.
+
 ```
 $ grep -o "plane" */*/1471-213X-2-7.txt
 
@@ -131,7 +139,7 @@ $ grep -o "plane" */*/1471-213X-2-7.txt
     plane
 ```
 
-The -o command-line option prints out only matching parts of a matching line. This is a good way to double check that the grep command is matching what you intend it to.
+This command looked at the `1471-213X-2-7.txt` file for the word `plane`, and printed out the matching part of the lines that contained the word `plane`. Seeing `plane` printed out every time it matches is a good way to check that the command is matching to what you intend it to. 
 
 
 -n:
@@ -151,6 +159,8 @@ $ grep -n "mouse" */*/1471-213X-1-1.txt
     272:        The mouse gene encoding the 67 kDa isoform of glutamate
     277:        and ectoderm of the limb buds in mouse embryos from
 ```
+The -n command-line option prints out the matching lines and their line numbers. This makes it helpful to find where in the file the matching line is located, and what the line should look like. Here it looked at the file `1471-213X-1-1.txt` for the word `mouse` and printed out the matching lines and line numbers. 
+
 ```
 $grep -n "plane" */*/1471-213X-2-7.txt
 
@@ -158,6 +168,12 @@ $grep -n "plane" */*/1471-213X-2-7.txt
     28:        epidermis. Bristles are polarized within the plane of the
     438:          that surrounds the growing shaft remains in the plane of
 ```
-The -n command-line option prints out the matching lines and their line numbers. This makes it helpful to find where in the file the matching line is located, and what the line should look like. 
+
+This command looked at the file `1471-213X-2-7.txt` and printed out the matching lines and their line numbers for the word `plane`. This is useful when you want to find a particular part of the file containg the inputed word, and the line number makes it easy to go back into that file and fine the line you're looking for.  
 
 
+
+
+Sources:
+
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
