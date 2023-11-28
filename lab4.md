@@ -42,4 +42,4 @@ Step 9:
 ![Image](step9.png)
 
 
-Keys pressed: `git add ListExamples.java <enter>`, `git clone`,(entered vim to enter commit message) `i` `index2 update` `<esc> ` `<shift>;wq<shift>1 <enter.`(types out `:wq!`), `git push`. Adds `ListExamples.java` to staging area, commits change, and pushes it out to the repositiory. 
+Keys pressed: `git add ListExamples.java <enter>`, `git commit`,(entered vim to enter commit message) `i` `index2 update` `<esc> ` `<shift>;wq<shift>1 <enter.`(types out `:wq!`), `git push`. Adds `ListExamples.java` to staging area, commits change, and pushes it out to the repositiory. 
