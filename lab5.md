@@ -4,13 +4,36 @@
 Part1:
 
 Student:
-"I want to add a file to our lab3 repository that has a method, shiftRight, that takes an integer array and shifts over the elements to the right by 1, replaces the first element with a 0, and deletes the last element. I wrote some tests for my method but they aren't passing. For the two tests that aren't passing, it says that the third element differs between the expected and the actual. Any help?"
+
+"I want to add a file to our lab3 repository called ```ShiftOver```that has a method, ```shiftRight```, that takes an integer array and shifts over the elements to the right by 1, replaces the first element with a 0, and deletes the last element. I wrote some tests for my method but they aren't passing. For the two tests that aren't passing, it says that the third element differs between the expected and the actual. Any help?"
+
+![Image](lab5(1).png)
+
+![Image](lab5(2).png)
+
+![Image](lab5(3).png)
+
+![Image](lab5(4).png)
+
+![Image](lab5(5).png)
+
 
 TA:
+
 "In what direction does the for loop change the elements in your array?. I would try add a line in your shiftRight method that prints out the resulting array. Make sure to import the Arrays package by adding ```import java.util.Arrays; ``` to the top of the file. To print your array, add the line ```System.out.println(Arrays.toString(arr));``` to your shiftRight method, and run your ```shiftTest.sh``` bash file again."
 
 Student:
+
 "Thank you! The bash script made me realize that my for loop was copying the value of the second element to every spot on the array. I realized that the for loop should assign the elements of the array from right to left and not from left to right. All my tests passed now."
+
+![Image](lab5(6).png)
+
+![Image](lab5(7).png)
+
+![Image](lab5(8).png)
+
+![Image](lab5(9).png)
+
 
 Part 2:
 
