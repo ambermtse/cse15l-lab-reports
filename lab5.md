@@ -20,11 +20,11 @@ Student:
 
 TA:
 
-"In what direction does the for loop change the elements in your array?. I would try add a line in your shiftRight method that prints out the resulting array. Make sure to import the Arrays package by adding ```import java.util.Arrays; ``` to the top of the file. To print your array, add the line ```System.out.println(Arrays.toString(arr));``` to your shiftRight method, and run your ```shiftTest.sh``` bash file again."
+"In what direction does your for loop change the elements in your array?. I would try add a line in your shiftRight method that prints out the resulting array to see your output. You can do this by importing the Arrays package at the top of your ```ShiftOver.java``` file by adding ```import java.util.Arrays; ```. To print your array, add the line ```System.out.println(Arrays.toString(arr));``` to your shiftRight method, and run your ```shiftTest.sh``` bash file again."
 
 Student:
 
-"Thank you! The bash script made me realize that my for loop was copying the value of the second element to every spot on the array. I realized that the for loop should assign the elements of the array from right to left and not from left to right. All my tests passed now."
+"Thank you! The bash script made me realize that my for loop was copying the value of the second element to every spot on the array. My for loop was assigning new element values starting from the left and going to the right, which was the bug. I realized that the for loop should assign the elements of the array from right to left and not from left to right. To fix the bug, I changed the for loop to start at the end (right side) of the array and move to the left, this way I don't copy over the same value to each array index. All my tests passed now."
 
 ![Image](lab5(6).png)
 
